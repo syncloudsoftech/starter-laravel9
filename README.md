@@ -1,27 +1,27 @@
-# syncloudsoftech.com
+# starter-laravel9
 
-Source code for [syncloudsoftech.com](https://syncloudsoftech.com/) website.
+Starter project based on [Laravel](https://laravel.com/) 9 + [Docker](https://www.docker.com/), uses [Bootstrap](https://getbootstrap.com/) 5 + [Font Awesome](https://fontawesome.com/) 6 for styling.
 
 ## Development
 
-To start developing with the code, please make sure to have [Docker](https://www.docker.com/), [Node.js](https://nodejs.org/en/), [Yarn](https://yarnpkg.com/), [PHP](https://www.php.net) and [composer](https://getcomposer.org) installed on your workstation.
+To start developing with the code, please make sure to have [Docker](https://www.docker.com/), [Node.js](https://nodejs.org/en/), [Yarn](https://yarnpkg.com/), [PHP](https://www.php.net/) and [composer](https://getcomposer.org/) installed on your workstation.
 Once done, download/clone the code and run below commands in project folder:
 
 ```shell
 # install dependencies
-composer install && yarn install
+$ composer install && yarn install
 
 # create sample .env file
-php -r "file_exists('.env') || copy('.env.example', '.env');"
+$ php -r "file_exists('.env') || copy('.env.example', '.env');"
 
 # set application key
-php artisan key:generate
+$ php artisan key:generate
 
 # start Docker services
-docker-compose up -d
+$ docker-compose up -d
 
 # prepare database
-php artisan migrate --seed
+$ php artisan migrate --seed
 ```
 
 ### Running
@@ -29,7 +29,7 @@ php artisan migrate --seed
 Finally, you can run the project using below command:
 
 ```shell
-php artisan serve
+$ php artisan serve
 ```
 
 ## Extras
@@ -47,5 +47,5 @@ Some additional configuration described below may be needed for extended functio
 
 ### File uploads
 
-Before uploading files, you may need to log in to [MinIO](https://min.io/) console at [http://localhost:9091/](http://localhost:9091/) using `syncloudsoft` as both (username and password) and create a bucket named `syncloudsoft`.
+Before uploading files, you may need to log in to [MinIO](https://min.io/) console at [http://localhost:9091/](http://localhost:9091/) using `starterapp` as both (username and password) and create a bucket named `starterapp`.
 Once created, go to bucket's settings and change its **Access Policy** to `Public`.
