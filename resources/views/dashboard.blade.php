@@ -9,7 +9,7 @@
                         {{ session('status') }}
                     </div>
                 @endif
-                <div class="card">
+                <div class="card border-0 shadow-sm">
                     <div class="card-body">
                         <h5 class="card-title">{{ __('Dashboard') }}</h5>
                         <p class="card-text">

@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <h1 class="text-center mb-3">
+    <h1 class="h4 card-title mb-3">
         {{ __('Email verification') }}
     </h1>
     @if (session('resent'))
@@ -14,11 +14,11 @@
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="{{ __('Close') }}"></button>
         </div>
     @endif
-    <p>
+    <p class="card-text">
         {{ __('Thanks for signing up!') }}
         {{ __('Before getting started, we need you to verify your email address by clicking on the link we just emailed to you.') }}
     </p>
-    <p>
+    <p class="card-text">
         {{ __("If you didn't receive the email, we will gladly send you another.") }}
     </p>
     <form action="{{ route('verification.resend') }}" method="post">

@@ -5,10 +5,10 @@
 @endsection
 
 @section('content')
-    <h1 class="text-center mb-3">
+    <h1 class="h4 card-title mb-3">
         {{ __('Confirm password') }}
     </h1>
-    <p>
+    <p class="card-text">
         {{ __('This is a secure area of the application.') }}
         {{ __('Please confirm your password before continuing.') }}
     </p>

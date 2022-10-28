@@ -5,10 +5,10 @@
 @endsection
 
 @section('content')
-    <h1 class="text-center mb-3">
+    <h1 class="h4 card-title mb-3">
         {{ __('Set new password') }}
     </h1>
-    <p>
+    <p class="card-text">
         {{ __('Choose a strong, new password below to regain access to your account.') }}
     </p>
     <form action="{{ route('password.update') }}" method="post">

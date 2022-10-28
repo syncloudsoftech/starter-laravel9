@@ -5,10 +5,10 @@
 @endsection
 
 @section('content')
-    <h1 class="text-center mb-3">
+    <h1 class="h4 card-title mb-3">
         {{ __('Create new account') }}
     </h1>
-    <p>
+    <p class="card-text">
         {{ __('Register for a account with us using below form.') }}
         {{ __("It's free, no credit card required.") }}
     </p>

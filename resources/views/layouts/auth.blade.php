@@ -7,18 +7,16 @@
     <div class="container my-auto py-3">
         <div class="row justify-content-center">
             <div class="col-md-6 col-lg-4">
-                <div class="mb-5">
-                    @yield('content')
+                <div class="card border-0 shadow-sm mb-3">
+                    <div class="card-body">
+                        @yield('content')
+                    </div>
                 </div>
-                <p class="text-center mb-0">
+                <p class="mb-0">
                     @auth
                         <a class="text-body" href="{{ route('logout') }}" onclick="event.preventDefault(); logout()">{{ __('Logout') }}</a>
                         &bull;
                     @endauth
-                    <a class="text-body" href="">{{ __('Privacy policy') }}</a>
-                    &bull;
-                    <a class="text-body" href="">{{ __('Terms of service') }}</a>
-                    &bull;
                     <strong>{{ config('app.name') }}</strong> &copy; {{ date('Y') }}
                 </p>
             </div>
